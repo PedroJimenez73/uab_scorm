@@ -1,0 +1,182 @@
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fade-in-slow {
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 3000ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fade-uno {
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 300ms;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fade-dos {
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 300ms;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fade-tres {
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 300ms;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fade-cuatro {
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 300ms;
+    animation-delay: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fade-cinco {
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 300ms;
+    animation-delay: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fade-seis {
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 300ms;
+    animation-delay: 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fade-siete {
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 300ms;
+    animation-delay: 7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fade-ocho {
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 300ms;
+    animation-delay: 8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fade-nueve {
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 300ms;
+    animation-delay: 9s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fade-diez {
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 300ms;
+    animation-delay: 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes left-fade {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+.left-fade-in {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation-name: left-fade;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes right-fade {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+.right-fade-in {
+    opacity: 0;
+    transform: translateX(100%);
+    animation-name: right-fade;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.right-fade-in-slow {
+    opacity: 0;
+    transform: translateX(100%);
+    animation-name: right-fade;
+    animation-duration: 1000ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ping {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+        transform: scale(0.85);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.interm {
+    animation-name: ping;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+}

@@ -1,0 +1,39 @@
+<div appScroll class="contenedor condicional">
+    <div class="titles">
+        <div class="title-screen left-fade-in">
+            <h1>Lorem</h1>
+            <h2>ipsum</h2>
+        </div>
+        <div class="title-back right-fade-in">
+            <h1>&nbsp;</h1>
+            <h2>&nbsp;</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-100">
+            <div class="timeline">
+                <div class="items">
+                    <div class="item selected" (click)="selectItem(1)">PARIS</div>
+                    <div class="linea-gris"></div>
+                    <div class="item" (click)="selectItem(2)">ROMA</div>
+                    <div class="linea-gris"></div>
+                    <div class="item" (click)="selectItem(3)">NUEVA YORK</div>
+                </div>
+                <div class="textos">
+                    <p class="texto selected show">
+                        <img style="width: 250px; min-width: 250px; margin-right: 20px" src="assets/paris.jpg" alt="">
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis accusantium, suscipit quasi non hic sunt?</span>
+                    </p>
+                    <p class="texto">
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos provident modi culpa!</span>
+                        <img style="width: 250px; min-width: 250px; margin-right: 20px" src="assets/roma.jpg" alt="">
+                    </p>
+                    <p class="texto">
+                        <img style="width: 250px; min-width: 250px; margin-right: 20px" src="assets/ny.jpg" alt="">
+                        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores nisi est eaque rem ratione deserunt quibusdam maxime.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+.titles {
+    @include flex(center, center);
+    padding: 0 1rem;
+}
+
+.title-screen {
+    width: 50%;
+    background-color: black;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+
+    h1 {
+        font-size: 1.8rem;
+        color: $brand-color;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        color: white
+    }
+}
+
+.title-back {
+    width: 50%;
+    background-color: $brand-color;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+
+    h1 {
+        font-size: 1.8rem;
+        color: $brand-color;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        color: white
+    }
+}
+
+@media (max-width: $small-device) {
+
+    .title-screen {
+        width: 100%;
+    }
+    .title-back {
+        display: none;
+    }
+}

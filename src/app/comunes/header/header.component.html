@@ -1,0 +1,65 @@
+<div #burger id="burger" class="burger" (click)="toggleMenu()">
+    <div class="barra arriba" [ngClass]="headerClass"></div>
+    <div class="barra medio" [ngClass]="headerClass"></div>
+    <div class="barra abajo" [ngClass]="headerClass"></div>
+</div>
+<header [ngClass]="headerClass">
+    <div id="title">
+        <h1 [ngClass]="item.class">{{item.text}}</h1>
+    </div>
+    <div class="logos">
+        <img style="margin-bottom: 5px;"src="assets/logos/logo-sec.svg" alt="Logo UAB">
+        <img src="assets/logos/logo.svg" alt="Logo UAB">
+    </div>
+    <div class="white-logos">
+        <img style="margin-bottom: 5px;"src="assets/logos/white-logo-sec.svg" alt="Logo UAB">
+        <img src="assets/logos/white-logo.svg" alt="Logo UAB">
+    </div>
+</header>
+<div #lateral id="lateral">
+    <div class="caja-titulo">
+        <div class="filtro">
+            CUSTOMER EXPERIENCE
+            <span id="fondo-evol"></span>
+            <span id="evol"></span>
+            <span id="texto-porcentaje"></span>
+        </div>
+    </div>
+    <div class="acordeon-lateral">				
+        <div class="masInfo">
+            <p (click)="navTo(1)">
+                <span>
+                    Índice
+                </span>
+            </p>
+            <p (click)="navTo(2)">
+                <span>
+                    1 Lorem ipsum
+                </span>
+                <img *ngIf="unitPass[0].unlocked && !unitPass[0].passed" src="assets/grey-badge.svg">
+                <img *ngIf="unitPass[0].unlocked && unitPass[0].passed" src="assets/badge.svg">
+            </p>
+            <p class="lock" *ngIf="!unitPass[1].unlocked">
+                <span>
+                    2 Dolor sit
+                </span>
+                <img src="assets/candado.svg">
+            </p>
+            <p *ngIf="unitPass[1].unlocked" (click)="navTo(10)">
+                <span>
+                    2 Dolor sit
+                </span>
+                <img *ngIf="unitPass[1].unlocked && !unitPass[1].passed" src="assets/grey-badge.svg">
+                <img *ngIf="unitPass[1].unlocked && unitPass[1].passed" src="assets/badge.svg">
+            </p>
+            <p class="lock">
+                <span>
+                    3 Amet consectetur
+                </span>
+                <img src="assets/candado.svg">
+            </p>
+        </div>										
+        <p class="copy">&copy; 2020 UAB</p>
+    </div>
+</div>
+<div #overlay class="overlay" id="overlay-side"></div>

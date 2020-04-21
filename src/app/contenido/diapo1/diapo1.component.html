@@ -1,0 +1,65 @@
+<div appScroll class="indice fade-in">
+    <!-- <div class="card" *ngFor="let item of menu; let i = index"> -->
+    <div class="indice-row">
+        <div class="card" (click)="navTo(2)">
+            <img *ngIf="unitPass[0].unlocked && !unitPass[0].passed" class="badge" src="assets/grey-badge.svg">
+            <img *ngIf="unitPass[0].unlocked && unitPass[0].passed" class="badge" src="assets/badge.svg">
+            <div class="image-card">
+                <img src="assets/indice_1.jpg">
+            </div>
+            <div class="title-card">
+                <h1>Lorem ipsum</h1>
+            </div>
+            <div class="footer-card">
+                <p>Unidad 1</p>
+                <img src="assets/open-candado.svg" alt="">
+            </div>
+        </div>
+        <div class="card locked" *ngIf="!unitPass[1].unlocked">
+            <div class="image-card">
+                <img src="assets/indice_2.jpg">
+            </div>
+            <div class="title-card">
+                <h1>Dolor sit</h1>
+            </div>
+            <div class="footer-card">
+                <p>Unidad 2</p>
+                <img src="assets/candado.svg" alt="">
+            </div>
+        </div>
+        <div class="card" *ngIf="unitPass[1].unlocked" (click)="navTo(10)">
+            <img *ngIf="unitPass[1].unlocked && !unitPass[1].passed" class="badge" src="assets/grey-badge.svg">
+            <img *ngIf="unitPass[1].unlocked && unitPass[1].passed" class="badge" src="assets/badge.svg">
+            <div class="image-card">
+                <img src="assets/indice_2.jpg">
+            </div>
+            <div class="title-card">
+                <h1>Dolor sit</h1>
+            </div>
+            <div class="footer-card">
+                <p>Unidad 2</p>
+                <img src="assets/open-candado.svg" alt="">
+            </div>
+        </div>
+        <div class="card locked">
+            <div class="image-card">
+                <img src="assets/indice_3.jpg">
+            </div>
+            <div class="title-card">
+                <h1>Amet consectetur</h1>
+            </div>
+            <div class="footer-card">
+                <p>Unidad 3</p>
+                <img src="assets/candado.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+

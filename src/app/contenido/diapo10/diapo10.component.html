@@ -1,0 +1,55 @@
+<div appScroll class="contenedor condicional">
+    <div class="row">
+        <div class="col-100">
+            <div class="actividades mostrada">
+                <div style="display: flex; margin: 0; padding: 0;">
+                    <div class="col-50 columna">
+                        <div class="resultado">
+                            <span *ngIf="results[0]"><img src="assets/img/iconos/check-circle.svg"></span>
+                            <span *ngIf="!results[0]"><img src="assets/img/iconos/x-circle.svg"></span>
+                            <div>
+                                <p>PREGUNTA 1</p>
+                                <p *ngIf="results[0]">Correcta </p>
+                                <p *ngIf="!results[0]">Incorrecta </p>
+                            </div>
+                        </div>
+                        <div class="resultado">
+                            <span *ngIf="results[1]"><img src="assets/img/iconos/check-circle.svg"></span>
+                            <span *ngIf="!results[1]"><img src="assets/img/iconos/x-circle.svg"></span>
+                            <div>
+                                <p>PREGUNTA 2</p>
+                                <p *ngIf="results[1]">Correcta </p>
+                                <p *ngIf="!results[1]">Incorrecta </p>
+                            </div>
+                        </div>
+                        <div class="resultado">
+                            <span *ngIf="results[2]"><img src="assets/img/iconos/check-circle.svg"></span>
+                            <span *ngIf="!results[2]"><img src="assets/img/iconos/x-circle.svg"></span>
+                            <div>
+                                <p>PREGUNTA 3</p>
+                                <p *ngIf="results[2]">Correcta </p>
+                                <p *ngIf="!results[2]">Incorrecta </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-50 doble-centrada">
+                        <canvas baseChart
+                                [data]="doughnutChartData"
+                                [labels]="doughnutChartLabels"
+                                [options]="doughnutChartOptions"
+                                [chartType]="doughnutChartType"
+                                [colors]="doughnutChartColors">
+                        </canvas>
+                    </div>
+                </div>
+                <div style="width: 100%; margin-top: 20px; display: flex; justify-content: center; align-items: center;">
+                    <span style="font-size: 24px; padding: 10px 0;">{{mensaje}}</span><img *ngIf="pass" style="margin-left: 20px; height: 60px" src="assets/badge.svg">
+                </div>
+                <div style="width: 100%; margin-top: 20px; display: flex; justify-content: center; align-items: center;">
+                    <button *ngIf="!pass" class="outline" (click)="reset()">Nuevo intento</button>
+                    <button *ngIf="pass" class="outline" (click)="passUnit()">Ir al índice</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

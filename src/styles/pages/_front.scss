@@ -1,0 +1,32 @@
+.front {
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-image: url('src/assets/img/portada.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include flex(center, flex-end);
+
+    div {
+        background-color: $brand-color-80;
+        margin: 3em 2em;
+
+        .title {
+            background-color: transparent;
+            padding: 0 2em;
+            border-left: 2px solid white; 
+
+            p {
+                font-size: 3em;
+                color: white;
+                padding: 0;
+                font-family: $titles-thin-font;
+            }
+
+            p:first-child {
+                font-family: $titles-font;
+            }
+        }
+    }
+
+}
